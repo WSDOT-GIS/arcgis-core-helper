@@ -1,0 +1,13 @@
+{
+  "name": "types_arcgis-core-extra",
+  "type": "module",
+  "private": true,
+  "types": "arcgis-extra.d.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5",
+    "@arcgis/core": "^4.32"
+  }
+}

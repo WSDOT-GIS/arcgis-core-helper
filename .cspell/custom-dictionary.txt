@@ -1,0 +1,25 @@
+# Custom Dictionary Words
+basemap
+Basemaps
+Bitfield
+CIMKG
+Clonable
+colormap
+Colormap
+Evented
+geoprocessor
+Georeference
+Georeferenced
+Geotrigger
+geotriggers
+Multipoint
+Multiray
+Nonspatial
+Refreshable
+Sublayer
+Sublayers
+Viewshed
+webdoc
+webmap
+webscene
+WMTS
