@@ -4,6 +4,7 @@
   "private": true,
   "types": "arcgis-extra.d.ts",
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@types/bun": "latest"
   },
   "peerDependencies": {
