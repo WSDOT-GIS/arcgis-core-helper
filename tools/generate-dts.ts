@@ -64,8 +64,6 @@ function getAllDtsModules(
 
 const modules = getAllDtsModules();
 
-console.table(modules);
-
 /**
  * A generator that yields lines of code that define the
  * properties of the ArcGISModuleMap type.

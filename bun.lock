@@ -4,47 +4,45 @@
     "": {
       "name": "@wsdot/types_arcgis-core-extra",
       "devDependencies": {
-        "@biomejs/biome": "^1.9.4",
+        "@biomejs/biome": "^2.0.6",
         "@types/bun": "latest",
       },
       "peerDependencies": {
-        "@arcgis/core": "^4.32",
-        "typescript": "^5",
+        "@arcgis/core": "^4.33.6",
+        "typescript": "^5.8.3",
       },
     },
   },
   "packages": {
-    "@arcgis/components-controllers": ["@arcgis/components-controllers@4.32.14", "", { "dependencies": { "@arcgis/components-utils": "4.32.14", "tslib": "^2.7.0" } }, "sha512-mJMXIKKVhKXAnrBhxakP5IMPddbWic7Nj5f5Wwc1NLW1TSH6DYx26l7DP302wp99IIz0UqlCUEJl9pRy3rPdtw=="],
+    "@arcgis/components-utils": ["@arcgis/components-utils@4.33.8", "", { "dependencies": { "tslib": "^2.8.1" } }, "sha512-RJigW8ExibTpbueMqqsplW8YJB9IqJZ/83nySQco8izViWApo7HA67R3c+ROryzGYJkAcfTm8ECkcRMOwW4JHA=="],
 
-    "@arcgis/components-utils": ["@arcgis/components-utils@4.32.14", "", { "dependencies": { "tslib": "^2.7.0" } }, "sha512-7uvJRrS4GMiBVJsqr4SOpmYWLOB++Wf+DkgHi1j/d379vdF72p725vy+u5US9JrG9haolE92ZO3gfQ5gLBqSpw=="],
+    "@arcgis/core": ["@arcgis/core@4.33.6", "", { "dependencies": { "@esri/arcgis-html-sanitizer": "~4.1.0", "@esri/calcite-components": "^3.2.1", "@vaadin/grid": "~24.7.6", "@zip.js/zip.js": "~2.7.62", "luxon": "~3.6.1", "marked": "~15.0.12" } }, "sha512-wYXZ3GNg/ybZOmKDjMfTpxnZBJ17wJYMDgNwXllZxl+Ey4Xz9BV8gB4FF7i2EaE6RqUsMx3RfJ8R1KTeM9axFQ=="],
 
-    "@arcgis/core": ["@arcgis/core@4.32.10", "", { "dependencies": { "@esri/arcgis-html-sanitizer": "~4.1.0", "@esri/calcite-components": "^3.0.3", "@vaadin/grid": "~24.6.4", "@zip.js/zip.js": "~2.7.57", "luxon": "~3.5.0", "marked": "~15.0.6" } }, "sha512-dcYbISxjsrBUBmrIx1dlTV4ynrl1CrvqLcd2fYtFgc0WNTqx3V7lFNmpBbT9wu15wqaTUA8kVXmN9HCoUppA4w=="],
+    "@arcgis/lumina": ["@arcgis/lumina@4.33.8", "", { "dependencies": { "@arcgis/components-utils": "4.33.8", "@lit-labs/ssr": "^3.2.2", "@lit-labs/ssr-client": "^1.1.7", "@lit/context": "^1.1.5", "csstype": "^3.1.3", "lit": "^3.3.0", "tslib": "^2.8.1" } }, "sha512-ANnnxxIxU9gUqmspp1OYiLL+0qNYH22G3bm1yshsTYhfkg9WE83UgkJ+qHWWnRXglgk0TSWgW4wO8+w4EaayMQ=="],
 
-    "@arcgis/lumina": ["@arcgis/lumina@4.32.14", "", { "dependencies": { "@arcgis/components-controllers": "4.32.14", "@arcgis/components-utils": "4.32.14", "@lit-labs/ssr": "^3.2.2", "@lit-labs/ssr-client": "^1.1.7", "@lit/context": "^1.1.3", "csstype": "^3.1.3", "lit": "^3.2.0", "tslib": "^2.7.0" } }, "sha512-PzLfQ2sKigEFhLNILuAU3mUouUFGdJbr9k5/+bwa8yy3dyS22e3lKsoIm5sJpE1Lj22KT2cX9WKc2V0Gs8IMsQ=="],
+    "@biomejs/biome": ["@biomejs/biome@2.0.6", "", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "2.0.6", "@biomejs/cli-darwin-x64": "2.0.6", "@biomejs/cli-linux-arm64": "2.0.6", "@biomejs/cli-linux-arm64-musl": "2.0.6", "@biomejs/cli-linux-x64": "2.0.6", "@biomejs/cli-linux-x64-musl": "2.0.6", "@biomejs/cli-win32-arm64": "2.0.6", "@biomejs/cli-win32-x64": "2.0.6" }, "bin": { "biome": "bin/biome" } }, "sha512-RRP+9cdh5qwe2t0gORwXaa27oTOiQRQvrFf49x2PA1tnpsyU7FIHX4ZOFMtBC4QNtyWsN7Dqkf5EDbg4X+9iqA=="],
 
-    "@biomejs/biome": ["@biomejs/biome@1.9.4", "", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "1.9.4", "@biomejs/cli-darwin-x64": "1.9.4", "@biomejs/cli-linux-arm64": "1.9.4", "@biomejs/cli-linux-arm64-musl": "1.9.4", "@biomejs/cli-linux-x64": "1.9.4", "@biomejs/cli-linux-x64-musl": "1.9.4", "@biomejs/cli-win32-arm64": "1.9.4", "@biomejs/cli-win32-x64": "1.9.4" }, "bin": { "biome": "bin/biome" } }, "sha512-1rkd7G70+o9KkTn5KLmDYXihGoTaIGO9PIIN2ZB7UJxFrWw04CZHPYiMRjYsaDvVV7hP1dYNRLxSANLaBFGpog=="],
+    "@biomejs/cli-darwin-arm64": ["@biomejs/cli-darwin-arm64@2.0.6", "", { "os": "darwin", "cpu": "arm64" }, "sha512-AzdiNNjNzsE6LfqWyBvcL29uWoIuZUkndu+wwlXW13EKcBHbbKjNQEZIJKYDc6IL+p7bmWGx3v9ZtcRyIoIz5A=="],
 
-    "@biomejs/cli-darwin-arm64": ["@biomejs/cli-darwin-arm64@1.9.4", "", { "os": "darwin", "cpu": "arm64" }, "sha512-bFBsPWrNvkdKrNCYeAp+xo2HecOGPAy9WyNyB/jKnnedgzl4W4Hb9ZMzYNbf8dMCGmUdSavlYHiR01QaYR58cw=="],
+    "@biomejs/cli-darwin-x64": ["@biomejs/cli-darwin-x64@2.0.6", "", { "os": "darwin", "cpu": "x64" }, "sha512-wJjjP4E7bO4WJmiQaLnsdXMa516dbtC6542qeRkyJg0MqMXP0fvs4gdsHhZ7p9XWTAmGIjZHFKXdsjBvKGIJJQ=="],
 
-    "@biomejs/cli-darwin-x64": ["@biomejs/cli-darwin-x64@1.9.4", "", { "os": "darwin", "cpu": "x64" }, "sha512-ngYBh/+bEedqkSevPVhLP4QfVPCpb+4BBe2p7Xs32dBgs7rh9nY2AIYUL6BgLw1JVXV8GlpKmb/hNiuIxfPfZg=="],
+    "@biomejs/cli-linux-arm64": ["@biomejs/cli-linux-arm64@2.0.6", "", { "os": "linux", "cpu": "arm64" }, "sha512-ZSVf6TYo5rNMUHIW1tww+rs/krol7U5A1Is/yzWyHVZguuB0lBnIodqyFuwCNqG9aJGyk7xIMS8HG0qGUPz0SA=="],
 
-    "@biomejs/cli-linux-arm64": ["@biomejs/cli-linux-arm64@1.9.4", "", { "os": "linux", "cpu": "arm64" }, "sha512-fJIW0+LYujdjUgJJuwesP4EjIBl/N/TcOX3IvIHJQNsAqvV2CHIogsmA94BPG6jZATS4Hi+xv4SkBBQSt1N4/g=="],
+    "@biomejs/cli-linux-arm64-musl": ["@biomejs/cli-linux-arm64-musl@2.0.6", "", { "os": "linux", "cpu": "arm64" }, "sha512-CVPEMlin3bW49sBqLBg2x016Pws7eUXA27XYDFlEtponD0luYjg2zQaMJ2nOqlkKG9fqzzkamdYxHdMDc2gZFw=="],
 
-    "@biomejs/cli-linux-arm64-musl": ["@biomejs/cli-linux-arm64-musl@1.9.4", "", { "os": "linux", "cpu": "arm64" }, "sha512-v665Ct9WCRjGa8+kTr0CzApU0+XXtRgwmzIf1SeKSGAv+2scAlW6JR5PMFo6FzqqZ64Po79cKODKf3/AAmECqA=="],
+    "@biomejs/cli-linux-x64": ["@biomejs/cli-linux-x64@2.0.6", "", { "os": "linux", "cpu": "x64" }, "sha512-geM1MkHTV1Kh2Cs/Xzot9BOF3WBacihw6bkEmxkz4nSga8B9/hWy5BDiOG3gHDGIBa8WxT0nzsJs2f/hPqQIQw=="],
 
-    "@biomejs/cli-linux-x64": ["@biomejs/cli-linux-x64@1.9.4", "", { "os": "linux", "cpu": "x64" }, "sha512-lRCJv/Vi3Vlwmbd6K+oQ0KhLHMAysN8lXoCI7XeHlxaajk06u7G+UsFSO01NAs5iYuWKmVZjmiOzJ0OJmGsMwg=="],
+    "@biomejs/cli-linux-x64-musl": ["@biomejs/cli-linux-x64-musl@2.0.6", "", { "os": "linux", "cpu": "x64" }, "sha512-mKHE/e954hR/hSnAcJSjkf4xGqZc/53Kh39HVW1EgO5iFi0JutTN07TSjEMg616julRtfSNJi0KNyxvc30Y4rQ=="],
 
-    "@biomejs/cli-linux-x64-musl": ["@biomejs/cli-linux-x64-musl@1.9.4", "", { "os": "linux", "cpu": "x64" }, "sha512-gEhi/jSBhZ2m6wjV530Yy8+fNqG8PAinM3oV7CyO+6c3CEh16Eizm21uHVsyVBEB6RIM8JHIl6AGYCv6Q6Q9Tg=="],
+    "@biomejs/cli-win32-arm64": ["@biomejs/cli-win32-arm64@2.0.6", "", { "os": "win32", "cpu": "arm64" }, "sha512-290V4oSFoKaprKE1zkYVsDfAdn0An5DowZ+GIABgjoq1ndhvNxkJcpxPsiYtT7slbVe3xmlT0ncdfOsN7KruzA=="],
 
-    "@biomejs/cli-win32-arm64": ["@biomejs/cli-win32-arm64@1.9.4", "", { "os": "win32", "cpu": "arm64" }, "sha512-tlbhLk+WXZmgwoIKwHIHEBZUwxml7bRJgk0X2sPyNR3S93cdRq6XulAZRQJ17FYGGzWne0fgrXBKpl7l4M87Hg=="],
-
-    "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@1.9.4", "", { "os": "win32", "cpu": "x64" }, "sha512-8Y5wMhVIPaWe6jw2H+KlEm4wP/f7EW3810ZLmDlrEEy5KvBsb9ECEfu/kMWD484ijfQ8+nIi0giMgu9g1UAuuA=="],
+    "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@2.0.6", "", { "os": "win32", "cpu": "x64" }, "sha512-bfM1Bce0d69Ao7pjTjUS+AWSZ02+5UHdiAP85Th8e9yV5xzw6JrHXbL5YWlcEKQ84FIZMdDc7ncuti1wd2sdbw=="],
 
     "@esri/arcgis-html-sanitizer": ["@esri/arcgis-html-sanitizer@4.1.0", "", { "dependencies": { "xss": "1.0.13" } }, "sha512-einEveDJ/k1180NOp78PB/4Hje9eBy3dyOGLLtLn6bSkizpUfCwuYBIXOA7Y3F/k/BsTQXgKqUVwQ0eiscWMdA=="],
 
-    "@esri/calcite-components": ["@esri/calcite-components@3.1.0", "", { "dependencies": { "@arcgis/components-controllers": "^4.32.12", "@arcgis/components-utils": "^4.32.12", "@arcgis/lumina": "^4.32.12", "@esri/calcite-ui-icons": "4.1.0", "@floating-ui/dom": "^1.6.12", "@floating-ui/utils": "^0.2.8", "@types/sortablejs": "^1.15.8", "color": "^5.0.0", "composed-offset-position": "^0.0.6", "dayjs": "^1.11.13", "focus-trap": "^7.6.2", "interactjs": "^1.10.27", "lodash-es": "^4.17.21", "sortablejs": "^1.15.6", "timezone-groups": "^0.10.4", "type-fest": "^4.30.1" } }, "sha512-tfuxpwHRftyREO9vAcuuWf9KGaSc9UZrw75w/XZsU6fz33biMrANhhFEoTx5dTMALj68Fxnxibpiyg1vv9BRwQ=="],
+    "@esri/calcite-components": ["@esri/calcite-components@3.2.1", "", { "dependencies": { "@arcgis/components-utils": "^4.33.0-next.121", "@arcgis/lumina": "^4.33.0-next.121", "@esri/calcite-ui-icons": "4.2.0", "@floating-ui/dom": "^1.6.12", "@floating-ui/utils": "^0.2.8", "@types/sortablejs": "^1.15.8", "color": "^5.0.0", "composed-offset-position": "^0.0.6", "dayjs": "^1.11.13", "focus-trap": "^7.6.2", "interactjs": "^1.10.27", "lodash-es": "^4.17.21", "sortablejs": "^1.15.6", "timezone-groups": "^0.10.4", "type-fest": "^4.30.1" } }, "sha512-NRBW/bhT4sQM5RAZF7W8/VymaOLgIzaR6yTZFI270Ig4NiQ4DRexjdeo/SwDMBlswFtBw5iya+/h+fAur2+Hlg=="],
 
-    "@esri/calcite-ui-icons": ["@esri/calcite-ui-icons@4.1.0", "", { "bin": { "spriter": "bin/spriter.js" } }, "sha512-j8uPnbsrPklQVRnaL2qg0wfosavdnQXARr7ckpiIpzAX75MGmNGLg4QKfpAeQrXGJ/xznWWAc+GtAMY8aDrLsw=="],
+    "@esri/calcite-ui-icons": ["@esri/calcite-ui-icons@4.2.0", "", { "bin": { "spriter": "bin/spriter.js" } }, "sha512-GS41gUt1tgnqG+U1a6yDRiKOHmuLST2uyOI7+cJ83JtLJ7CGduH9K6RERabTE2vRYbudaebI8jZgKNSNOHdGzw=="],
 
     "@floating-ui/core": ["@floating-ui/core@1.6.9", "", { "dependencies": { "@floating-ui/utils": "^0.2.9" } }, "sha512-uMXCuQ3BItDUbAMhIXw7UPXRfAlOAvZzdK9BWpE60MCn+Svt3aLn9jsPTi/WNGlRUu2uI0v5S7JiIUsbsvh3fw=="],
 
@@ -70,7 +68,7 @@
 
     "@polymer/polymer": ["@polymer/polymer@3.5.2", "", { "dependencies": { "@webcomponents/shadycss": "^1.9.1" } }, "sha512-fWwImY/UH4bb2534DVSaX+Azs2yKg8slkMBHOyGeU2kKx7Xmxp6Lee0jP8p6B3d7c1gFUPB2Z976dTUtX81pQA=="],
 
-    "@types/bun": ["@types/bun@1.2.9", "", { "dependencies": { "bun-types": "1.2.9" } }, "sha512-epShhLGQYc4Bv/aceHbmBhOz1XgUnuTZgcxjxk+WXwNyDXavv5QHD1QEFV0FwbTSQtNq6g4ZcV6y0vZakTjswg=="],
+    "@types/bun": ["@types/bun@1.2.17", "", { "dependencies": { "bun-types": "1.2.17" } }, "sha512-l/BYs/JYt+cXA/0+wUhulYJB6a6p//GTPiJ7nV+QHa8iiId4HZmnu/3J/SowP5g0rTiERY2kfGKXEK5Ehltx4Q=="],
 
     "@types/node": ["@types/node@22.14.1", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw=="],
 
@@ -78,41 +76,39 @@
 
     "@types/trusted-types": ["@types/trusted-types@2.0.7", "", {}, "sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw=="],
 
-    "@types/ws": ["@types/ws@8.18.1", "", { "dependencies": { "@types/node": "*" } }, "sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg=="],
+    "@vaadin/a11y-base": ["@vaadin/a11y-base@24.7.9", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/component-base": "~24.7.9", "lit": "^3.0.0" } }, "sha512-B/xpWRl1P0KthZ4ZXeZj9jZEhvd1eDZs+CF2pdfg0Ib1cxHnwGMTBzydwuevcCFEdY0V0+jBQwbsYnMVSrJ6cg=="],
 
-    "@vaadin/a11y-base": ["@vaadin/a11y-base@24.6.8", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/component-base": "~24.6.8", "lit": "^3.0.0" } }, "sha512-0nBmXllsns+ZHG7ZDp8jcEf71LBjnTQ4zxYFY0K2ZOK9oSm3vYvBfDIFto08bpNvE/FtuhNTVchxMAEUUGYWTg=="],
+    "@vaadin/checkbox": ["@vaadin/checkbox@24.7.9", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/a11y-base": "~24.7.9", "@vaadin/component-base": "~24.7.9", "@vaadin/field-base": "~24.7.9", "@vaadin/vaadin-lumo-styles": "~24.7.9", "@vaadin/vaadin-material-styles": "~24.7.9", "@vaadin/vaadin-themable-mixin": "~24.7.9", "lit": "^3.0.0" } }, "sha512-a6V80JeUy940KvHrs6hKwAHbCCpsRWh8ITbrQXq9NksZSkjLlPz5Evfv6QEDxBpbni8WcEVXfan44t46oIPAiQ=="],
 
-    "@vaadin/checkbox": ["@vaadin/checkbox@24.6.8", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/a11y-base": "~24.6.8", "@vaadin/component-base": "~24.6.8", "@vaadin/field-base": "~24.6.8", "@vaadin/vaadin-lumo-styles": "~24.6.8", "@vaadin/vaadin-material-styles": "~24.6.8", "@vaadin/vaadin-themable-mixin": "~24.6.8", "lit": "^3.0.0" } }, "sha512-GZ8MWCbSiGwypGTlJZ+VYZu004CFAYFCexKT1MhSPsXTuhJaYYUS1/gvh8Kd5MLg1wCmBFhTVyCyyi7Of1SbTA=="],
+    "@vaadin/component-base": ["@vaadin/component-base@24.7.9", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/vaadin-development-mode-detector": "^2.0.0", "@vaadin/vaadin-usage-statistics": "^2.1.0", "lit": "^3.0.0" } }, "sha512-fBIxWHxJt4xTTpne5gmp/54rEPfpLUjWDgkXXgpSWYWaoMYRLcKGNCDJ45adh8s8d+Nvs5qT/eOoOOOupRGerw=="],
 
-    "@vaadin/component-base": ["@vaadin/component-base@24.6.8", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/vaadin-development-mode-detector": "^2.0.0", "@vaadin/vaadin-usage-statistics": "^2.1.0", "lit": "^3.0.0" } }, "sha512-72JkhGvSUcoePkX/2mXEWnzE7P004khAG/vlIBeWwnDJIZ4CJa9PLHTp1z5sLjF64ClgtbmkuxiuWNfyb6nr4Q=="],
+    "@vaadin/field-base": ["@vaadin/field-base@24.7.9", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/a11y-base": "~24.7.9", "@vaadin/component-base": "~24.7.9", "lit": "^3.0.0" } }, "sha512-HRjd5DvFluj3UrbDD2YZ15hp20hOAXVIbFdj70PINPW8waeRZOBMZwGpXCPauGbrzFgvGsLTVAESJjMYsiEnZA=="],
 
-    "@vaadin/field-base": ["@vaadin/field-base@24.6.8", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/a11y-base": "~24.6.8", "@vaadin/component-base": "~24.6.8", "lit": "^3.0.0" } }, "sha512-2W6TL8eXdPGWZucEFAZk5BMakburKfne4frcsboI70sAxrkpNr0bqoWOW59VT/Mx35fKHVXpKHeeH2p8/7aHpQ=="],
+    "@vaadin/grid": ["@vaadin/grid@24.7.9", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/a11y-base": "~24.7.9", "@vaadin/checkbox": "~24.7.9", "@vaadin/component-base": "~24.7.9", "@vaadin/lit-renderer": "~24.7.9", "@vaadin/text-field": "~24.7.9", "@vaadin/vaadin-lumo-styles": "~24.7.9", "@vaadin/vaadin-material-styles": "~24.7.9", "@vaadin/vaadin-themable-mixin": "~24.7.9", "lit": "^3.0.0" } }, "sha512-pxj3QGKTEcDHdEbABdsrCsPfHQQ8v0EpYCZhB2FkyXP5Q79oCG/tjT5lp/Gm9m67OTY1GeLDy6fbBwYp7satbA=="],
 
-    "@vaadin/grid": ["@vaadin/grid@24.6.8", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/a11y-base": "~24.6.8", "@vaadin/checkbox": "~24.6.8", "@vaadin/component-base": "~24.6.8", "@vaadin/lit-renderer": "~24.6.8", "@vaadin/text-field": "~24.6.8", "@vaadin/vaadin-lumo-styles": "~24.6.8", "@vaadin/vaadin-material-styles": "~24.6.8", "@vaadin/vaadin-themable-mixin": "~24.6.8", "lit": "^3.0.0" } }, "sha512-rpsfTpfBGWxZ8ipFGnNaA1JZFw+LfE4fs8BdbEtcL2IwnUDEuMNYIp2TSSIG8rcfCZl/YSsXIkdW/3+De3qRug=="],
+    "@vaadin/icon": ["@vaadin/icon@24.7.9", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/component-base": "~24.7.9", "@vaadin/vaadin-lumo-styles": "~24.7.9", "@vaadin/vaadin-themable-mixin": "~24.7.9", "lit": "^3.0.0" } }, "sha512-dzTPRzDpqEoxLcNCvzl0mdAo3Da5hMgOAouFlV/MZdYTq7Axalno/6DfhBjbLa2JWMT00ihckuyCB+moFWBYKw=="],
 
-    "@vaadin/icon": ["@vaadin/icon@24.6.8", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/component-base": "~24.6.8", "@vaadin/vaadin-lumo-styles": "~24.6.8", "@vaadin/vaadin-themable-mixin": "~24.6.8", "lit": "^3.0.0" } }, "sha512-rKEETleWIaeySbvuWf2siOgNZupqObEdyfhS2AjLLGxtmIIfbM6TqiiugS3SqPeKWFNFXlHFNsZc87eS1yBVNA=="],
+    "@vaadin/input-container": ["@vaadin/input-container@24.7.9", "", { "dependencies": { "@polymer/polymer": "^3.0.0", "@vaadin/component-base": "~24.7.9", "@vaadin/vaadin-lumo-styles": "~24.7.9", "@vaadin/vaadin-material-styles": "~24.7.9", "@vaadin/vaadin-themable-mixin": "~24.7.9", "lit": "^3.0.0" } }, "sha512-1DGZsxyYi6hWbcwHL6MpAxhO/fqAZzgq+1Rnxsq1KgEQC+1vrJx5a0uULDEnfqBnTmhcBUzfGsvdsSWtVwZw5A=="],
 
-    "@vaadin/input-container": ["@vaadin/input-container@24.6.8", "", { "dependencies": { "@polymer/polymer": "^3.0.0", "@vaadin/component-base": "~24.6.8", "@vaadin/vaadin-lumo-styles": "~24.6.8", "@vaadin/vaadin-material-styles": "~24.6.8", "@vaadin/vaadin-themable-mixin": "~24.6.8", "lit": "^3.0.0" } }, "sha512-o2BtDefZwCcff5SG5QjnqGyn/bNeo5i/VR9TdPl4ErUm7dDCto88De5TfOS10JCWSRmqC/PTfuo8Xe6epKpdXg=="],
+    "@vaadin/lit-renderer": ["@vaadin/lit-renderer@24.7.9", "", { "dependencies": { "lit": "^3.0.0" } }, "sha512-T2mcBv4a7gyMnzpCI4ILoEO+AfIvx2X6NLXHOj75Nd1FyPoukz2GVCEDH7Z4DJq1eVz2qr2gcu8ijS/vAd4U/Q=="],
 
-    "@vaadin/lit-renderer": ["@vaadin/lit-renderer@24.6.8", "", { "dependencies": { "lit": "^3.0.0" } }, "sha512-LXvHxsM5MaH/aaORMpb7n8vJxJpKWZmdApQyZJyIvIBegqns9wdMl1+RMcy8PDbPiqdPIbAn3XCmhGsGTrB8Og=="],
-
-    "@vaadin/text-field": ["@vaadin/text-field@24.6.8", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/a11y-base": "~24.6.8", "@vaadin/component-base": "~24.6.8", "@vaadin/field-base": "~24.6.8", "@vaadin/input-container": "~24.6.8", "@vaadin/vaadin-lumo-styles": "~24.6.8", "@vaadin/vaadin-material-styles": "~24.6.8", "@vaadin/vaadin-themable-mixin": "~24.6.8", "lit": "^3.0.0" } }, "sha512-wRZHNYQ9wxUL+mz7xNcT8U4DmcufTFOI1VUjfbL3gkRt9dA1Ap0DrNb0tccjV0GPnUv9CIUXtG11ct8Ix2nKcw=="],
+    "@vaadin/text-field": ["@vaadin/text-field@24.7.9", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "@polymer/polymer": "^3.0.0", "@vaadin/a11y-base": "~24.7.9", "@vaadin/component-base": "~24.7.9", "@vaadin/field-base": "~24.7.9", "@vaadin/input-container": "~24.7.9", "@vaadin/vaadin-lumo-styles": "~24.7.9", "@vaadin/vaadin-material-styles": "~24.7.9", "@vaadin/vaadin-themable-mixin": "~24.7.9", "lit": "^3.0.0" } }, "sha512-iXwryWdYYo7pG0mrvQneWReSMj3blIhiuAUvv6dflXiX6+sovt0AIgATJb9YiX/vmV9UpGXL6z+HT8cpLr33FA=="],
 
     "@vaadin/vaadin-development-mode-detector": ["@vaadin/vaadin-development-mode-detector@2.0.7", "", {}, "sha512-9FhVhr0ynSR3X2ao+vaIEttcNU5XfzCbxtmYOV8uIRnUCtNgbvMOIcyGBvntsX9I5kvIP2dV3cFAOG9SILJzEA=="],
 
-    "@vaadin/vaadin-lumo-styles": ["@vaadin/vaadin-lumo-styles@24.6.8", "", { "dependencies": { "@polymer/polymer": "^3.0.0", "@vaadin/component-base": "~24.6.8", "@vaadin/icon": "~24.6.8", "@vaadin/vaadin-themable-mixin": "~24.6.8" } }, "sha512-BtX8WEnAbZ/bwwlVTxyzByNbuknzOqGqMbjN0cQj/1uCnZSCeawj17rhuKHQRKYSGwRLv1+h14mAPC4lbPpR2A=="],
+    "@vaadin/vaadin-lumo-styles": ["@vaadin/vaadin-lumo-styles@24.7.9", "", { "dependencies": { "@polymer/polymer": "^3.0.0", "@vaadin/component-base": "~24.7.9", "@vaadin/icon": "~24.7.9", "@vaadin/vaadin-themable-mixin": "~24.7.9" } }, "sha512-codiq+QRpp9B5Q4IvX5CYTbO0RMn9TxFagJrIGm4ESgxtkMN6FAuKY5tCoft4w0Kd+X1Ov1Rcj+h5lkMzmo65Q=="],
 
-    "@vaadin/vaadin-material-styles": ["@vaadin/vaadin-material-styles@24.6.8", "", { "dependencies": { "@polymer/polymer": "^3.0.0", "@vaadin/component-base": "~24.6.8", "@vaadin/vaadin-themable-mixin": "~24.6.8" } }, "sha512-LWW3oAKzPpnhusHeGT56EfEfLHOEx78TwHXhYVoVbWcBVkAYx2y6QvaJ0CoqoAiCeMZmPKDgxAVxJAg+9fzKxg=="],
+    "@vaadin/vaadin-material-styles": ["@vaadin/vaadin-material-styles@24.7.9", "", { "dependencies": { "@polymer/polymer": "^3.0.0", "@vaadin/component-base": "~24.7.9", "@vaadin/vaadin-themable-mixin": "~24.7.9" } }, "sha512-pxOy+xT878zXZjnIl7+1Zf0L1UWhXgfHxeg4GTkEfnCFj/inL8gcsavJMwzp9NIKDLx9xS22MRK1ozrcjFFlTg=="],
 
-    "@vaadin/vaadin-themable-mixin": ["@vaadin/vaadin-themable-mixin@24.6.8", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "lit": "^3.0.0" } }, "sha512-CMI/MrXUjlB6Amxh8RiuPNv1N6eIHRtjKsqzOHKs6ZChJUtVceoK9Y1zTIL2zVdKlT9T0ENTcSP+ccqvnnAsdw=="],
+    "@vaadin/vaadin-themable-mixin": ["@vaadin/vaadin-themable-mixin@24.7.9", "", { "dependencies": { "@open-wc/dedupe-mixin": "^1.3.0", "lit": "^3.0.0" } }, "sha512-bPKsVo7Kkm7jeKecz0l2kalOj8w18Ue2OvIvdTQKvUuGhUnpGcK8wwyIz4CE74uc1g1XlM/qmPdplngD3SxC0g=="],
 
     "@vaadin/vaadin-usage-statistics": ["@vaadin/vaadin-usage-statistics@2.1.3", "", { "dependencies": { "@vaadin/vaadin-development-mode-detector": "^2.0.0" } }, "sha512-8r4TNknD7OJQADe3VygeofFR7UNAXZ2/jjBFP5dgI8+2uMfnuGYgbuHivasKr9WSQ64sPej6m8rDoM1uSllXjQ=="],
 
     "@webcomponents/shadycss": ["@webcomponents/shadycss@1.11.2", "", {}, "sha512-vRq+GniJAYSBmTRnhCYPAPq6THYqovJ/gzGThWbgEZUQaBccndGTi1hdiUP15HzEco0I6t4RCtXyX0rsSmwgPw=="],
 
-    "@zip.js/zip.js": ["@zip.js/zip.js@2.7.60", "", {}, "sha512-vA3rLyqdxBrVo1FWSsbyoecaqWTV+vgPRf0QKeM7kVDG0r+lHUqd7zQDv1TO9k4BcAoNzNDSNrrel24Mk6addA=="],
+    "@zip.js/zip.js": ["@zip.js/zip.js@2.7.62", "", {}, "sha512-OaLvZ8j4gCkLn048ypkZu29KX30r8/OfFF2w4Jo5WXFr+J04J+lzJ5TKZBVgFXhlvSkqNFQdfnY1Q8TMTCyBVA=="],
 
-    "bun-types": ["bun-types@1.2.9", "", { "dependencies": { "@types/node": "*", "@types/ws": "*" } }, "sha512-dk/kOEfQbajENN/D6FyiSgOKEuUi9PWfqKQJEgwKrCMWbjS/S6tEXp178mWvWAcUSYm9ArDlWHZKO3T/4cLXiw=="],
+    "bun-types": ["bun-types@1.2.17", "", { "dependencies": { "@types/node": "*" } }, "sha512-ElC7ItwT3SCQwYZDYoAH+q6KT4Fxjl8DtZ6qDulUFBmXA8YB4xo+l54J9ZJN+k2pphfn9vk7kfubeSd5QfTVJQ=="],
 
     "color": ["color@5.0.0", "", { "dependencies": { "color-convert": "^3.0.1", "color-string": "^2.0.0" } }, "sha512-16BlyiuyLq3MLxpRWyOTiWsO3ii/eLQLJUQXBSNcxMBBSnyt1ee9YUdaozQp03ifwm5woztEZGDbk9RGVuCsdw=="],
 
@@ -156,9 +152,9 @@
 
     "lodash-es": ["lodash-es@4.17.21", "", {}, "sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw=="],
 
-    "luxon": ["luxon@3.5.0", "", {}, "sha512-rh+Zjr6DNfUYR3bPwJEnuwDdqMbxZW7LOQfUN4B54+Cl+0o5zaU9RJ6bcidfDtC1cWCZXQ+nvX8bf6bAji37QQ=="],
+    "luxon": ["luxon@3.6.1", "", {}, "sha512-tJLxrKJhO2ukZ5z0gyjY1zPh3Rh88Ej9P7jNrZiHMUXHae1yvI2imgOZtL1TO8TW6biMMKfTtAOoEJANgtWBMQ=="],
 
-    "marked": ["marked@15.0.8", "", { "bin": { "marked": "bin/marked.js" } }, "sha512-rli4l2LyZqpQuRve5C0rkn6pj3hT8EWPC+zkAxFTAJLxRbENfTAhEQq9itrmf1Y81QtAX5D/MYlGlIomNgj9lA=="],
+    "marked": ["marked@15.0.12", "", { "bin": { "marked": "bin/marked.js" } }, "sha512-8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA=="],
 
     "node-domexception": ["node-domexception@1.0.0", "", {}, "sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ=="],
 
