@@ -13,7 +13,7 @@
 		"enabled": true,
 		"ignore": [
 			// Disable. Biome will mess up the ArcGISModuleMap
-			"arcgis-extra.d.ts"
+			"index.d.ts"
 		],
 		"indentStyle": "tab"
 	},
