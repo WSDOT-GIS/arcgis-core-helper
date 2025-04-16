@@ -2186,12 +2186,16 @@ declare global {
   const $arcgis: {
     // Single module import overload.
     import<T extends keyof ArcGISModuleMap>(
-      moduleName: T,
+      moduleName: T, forceESM?: boolean
     ): Promise<ArcGISModuleMap[T]>;
 
     // Array of modules overload.
     import<T extends readonly (keyof ArcGISModuleMap)[]>(
-      moduleNames: T,
+      moduleNames: T, forceESM?: boolean
     ): Promise<{ [K in keyof T]: ArcGISModuleMap[T[K]] }>;
   };
+
+  interface Window {
+    $arcgis: typeof $arcgis;
+  }
 }
