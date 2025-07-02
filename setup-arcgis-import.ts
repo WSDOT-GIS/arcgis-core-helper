@@ -2,9 +2,9 @@
  * @module setup-arcgis-import
  * @description Importing this module will add the `$arcgis.import` function to the global scope
  * if it is not already defined. (If it is already defined, it is left unchanged.)
- * 
+ *
  * Since the `$arcgis.import` function is only available when loading the
- * ArcGIS Maps SDK for JavaScript from the CDN, this presents a problem when writing 
+ * ArcGIS Maps SDK for JavaScript from the CDN, this presents a problem when writing
  * unit tests, since they are not web pages and thus are not loading the SDK from the CDN.
  * (Ideally, unit tests would not be loading internet resources, so will import modules locally.)
  * @example
@@ -23,7 +23,7 @@ export const importArcGisModules =
 	typeof $arcgis !== "undefined"
 		? $arcgis.import
 		: async <K extends keyof ArcGISModuleMap>(
-				moduleNames: K | readonly K[],
+				moduleNames: K | readonly K[]
 			) => {
 				if (typeof moduleNames === "string") {
 					const m = (await import(
@@ -44,7 +44,7 @@ export const importArcGisModules =
 							return importResult.default;
 						}
 						return importResult;
-					}),
+					})
 				);
 				return results;
 			};
