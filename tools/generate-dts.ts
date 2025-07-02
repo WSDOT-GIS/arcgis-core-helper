@@ -36,7 +36,7 @@ function hasDefaultExport(filePath: string) {
  * @returns an array of objects with the module path and full entry path.
  */
 function getAllDtsModules(
-	currentDir = "",
+	currentDir = ""
 ): { modulePath: string; fullEntryPath: string }[] {
 	const fullPath = join(baseDir, currentDir);
 	const entries = readdirSync(fullPath);
@@ -90,8 +90,7 @@ const lines = [
 	"export type ArcGISModuleMap = {",
 	...enumerateModules(modules),
 	"};",
-	String.raw`
-declare global {
+	`declare global {
 	const $arcgis: {
 		/**
 		 * Imports an @arcgis/core module from the CDN.
