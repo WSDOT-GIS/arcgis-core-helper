@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "prepublishOnly",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"icon": {
+				"id": "package",
+				"color": "terminal.ansiCyan"
+			},
+			"label": "Build",
+			"detail": "Generates .d.ts file & builds binaries"
+		},
+		{
+			"label": "My Task",
+			"type": "shell",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"command": "bun test . --bail 1"
+		}
+	]
+}

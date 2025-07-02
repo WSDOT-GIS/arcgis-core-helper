@@ -1,38 +1,44 @@
 {
-	"name": "@wsdot/types-arcgis-core-adapter",
-	"description": "Provides enhanced type information for $arcgis.import",
-	"version": "1.2.0",
-	"type": "module",
-	"types": "index.d.ts",
-	"files": [
-		"index.d.ts"
-	],
-	"author": "Jeff Jacobson",
-	"license": "Unlicense",
-	"scripts": {
-		"prepare": "bun tools/generate-dts.ts",
-		"test": "tsc --noEmit"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.0.6",
-		"@types/bun": "latest"
-	},
-	"peerDependencies": {
-		"typescript": "^5.8.3",
-		"@arcgis/core": "^4.33.6"
-	},
-	"keywords": [
-		"arcgis",
-		"type",
-		"typing"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/WSDOT-GIS/types_arcgis-core-adapter"
-	},
-	"bugs": {
-		"url": "https://github.com/WSDOT-GIS/types_arcgis-core-adapter/issues"
-	},
-	"homepage": "https://github.com/WSDOT-GIS/types_arcgis-core-adapter#readme",
-	"packageManager": "bun@1.2.17"
+  "name": "@wsdot/arcgis-core-helper",
+  "description": "Provides enhanced type information for $arcgis.import and a module to add $arcgis.import to the global context when it does not already exist, which will call the built-in dynamic import function.",
+  "version": "1.1.2",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "arcgis-cdn-dts": "bin/generate-dts.js"
+  },
+  "files": [
+    "dist/**",
+    "bin/**"
+  ],
+  "author": "Jeff Jacobson",
+  "license": "Unlicense",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "format": "bunx --bun biome format --write",
+    "lint": "bunx --bun biome lint",
+    "build": "bunx --bun tsc --build",
+    "prepublishOnly": "bun --bun tools/generate-dts.ts dist/index.d.ts && bun run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.1.1",
+    "@tsconfig/bun": "^1.0.8",
+    "@tsconfig/node-ts": "^23.6.1",
+    "@tsconfig/recommended": "^1.0.10",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3",
+    "@arcgis/core": "^4.33.9"
+  },
+  "keywords": [
+    "arcgis",
+    "type",
+    "typing"
+  ],
+  "repository": "github:WSDOT-GIS/arcgis-core-helper",
+  "bugs": "https://github.com/WSDOT-GIS/arcgis-core-helper/issues",
+  "homepage": "https://github.com/WSDOT-GIS/arcgis-core-helper#readme"
 }
