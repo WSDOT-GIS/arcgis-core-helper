@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * This script generates the `index.d.ts` file.
  */
@@ -35,12 +37,11 @@ function hasDefaultExport(filePath: string) {
  * Defaults to the root of the @arcgis/core module tree.
  * @returns an array of objects with the module path and full entry path.
  */
-function getAllDtsModules(
+function* getAllDtsModules(
 	currentDir = ""
-): { modulePath: string; fullEntryPath: string }[] {
+): Generator<{ modulePath: string; fullEntryPath: string }> {
 	const fullPath = join(baseDir, currentDir);
 	const entries = readdirSync(fullPath);
-	let modules: { modulePath: string; fullEntryPath: string }[] = [];
 
 	// Iterate over each entry in the current directory
 	for (const entry of entries) {
@@ -50,19 +51,19 @@ function getAllDtsModules(
 
 		// If the entry is a directory, recurse into it
 		if (stat.isDirectory()) {
-			modules = modules.concat(getAllDtsModules(entryPath));
+			yield* getAllDtsModules(entryPath);
 		}
 		// If the entry is a .d.ts file (excluding index.d.ts), add it to the modules list
 		else if (entry.endsWith(".d.ts") && entry !== "index.d.ts") {
 			const modulePath = entryPath.replace(/\.d\.ts$/, "").replace(/\\/g, "/");
-			modules.push({ modulePath, fullEntryPath });
+			yield { modulePath, fullEntryPath };
 		}
 	}
-
-	return modules;
 }
 
 const modules = getAllDtsModules();
+
+let moduleCount = 0;
 
 /**
  * A generator that yields lines of code that define the
@@ -76,6 +77,7 @@ const modules = getAllDtsModules();
  */
 function* enumerateModules(modules: ReturnType<typeof getAllDtsModules>) {
 	for (const { modulePath, fullEntryPath } of modules) {
+		moduleCount++;
 		if (hasDefaultExport(fullEntryPath)) {
 			yield `\t"@arcgis/core/${modulePath}": (typeof import("@arcgis/core/${modulePath}"))["default"];`;
 			yield `\t"@arcgis/core/${modulePath}.js": (typeof import("@arcgis/core/${modulePath}.js"))["default"];`;
@@ -122,4 +124,4 @@ const lines = [
 
 writeFileSync(outputFile, lines.join("\n"), "utf-8");
 
-stderr.write(`\n✅ Generated ${outputFile} with ${modules.length} entries.`);
+stderr.write(`\n✅ Generated ${outputFile} with ${moduleCount} entries.`);
