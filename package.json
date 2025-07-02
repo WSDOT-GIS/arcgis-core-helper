@@ -1,7 +1,7 @@
 {
 	"name": "@wsdot/types-arcgis-core-adapter",
 	"description": "Provides enhanced type information for $arcgis.import",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"type": "module",
 	"types": "index.d.ts",
 	"files": [

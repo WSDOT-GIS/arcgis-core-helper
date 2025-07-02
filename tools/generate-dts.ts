@@ -2,7 +2,7 @@
  * This script generates the `index.d.ts` file.
  */
 
-import { readdirSync, statSync, readFileSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { stderr } from "node:process";
 
