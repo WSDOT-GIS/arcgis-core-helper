@@ -1,0 +1,7 @@
+{
+    "files.readonlyInclude": {
+        "bin/**": true,
+        "node_modules/**": true
+    },
+    "files.readonlyFromPermissions": true
+}
