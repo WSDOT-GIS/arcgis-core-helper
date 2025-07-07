@@ -11,7 +11,7 @@
  * import "@wsdot/types-arcgis-core-adapter";
  */
 
-import type { ArcGISModuleMap } from ".";
+import type { ArcGISModuleMap } from "..";
 
 /**
  * Imports ArcGIS modules dynamically.

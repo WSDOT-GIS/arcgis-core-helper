@@ -4,11 +4,16 @@
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",
-		"useIgnoreFile": true
+		"useIgnoreFile": true,
+		"defaultBranch": "master"
 	},
 	"files": {
-		"ignoreUnknown": false,
-		"includes": ["**"]
+		"ignoreUnknown": true,
+		"includes": [
+			"**",
+			"!node_modules/**",
+			"!bin/**"
+		]
 	},
 	"formatter": {
 		"enabled": true,
