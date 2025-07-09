@@ -15,18 +15,18 @@
 	"author": "Jeff Jacobson",
 	"license": "Unlicense",
 	"scripts": {
-		"prepare": "bun tools/generate-dts.ts && biome format index.d.ts --write",
+		"prepare": "bun tools/generate-dts.ts && bunx --bun biome format index.d.ts --write",
 		"prepublishOnly": "bun tools/build.ts",
 		"lint": "biome lint",
 		"test": "tsc --noEmit"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.0.6",
+		"@biomejs/biome": "2.1.1",
 		"@types/bun": "latest"
 	},
 	"peerDependencies": {
 		"typescript": "^5.8.3",
-		"@arcgis/core": "^4.33.6"
+		"@arcgis/core": "^4.33.9"
 	},
 	"keywords": [
 		"arcgis",
