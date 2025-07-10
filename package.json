@@ -1,7 +1,7 @@
 {
-	"name": "@wsdot/types-arcgis-core-adapter",
-	"description": "Provides enhanced type information for $arcgis.import",
-	"version": "1.2.0",
+	"name": "@wsdot/arcgis-core-helper",
+	"description": "Provides enhanced type information for $arcgis.import and a module to add $arcgis.import to the global context when it does not already exist, which will call the built-in dynamic import function.",
+	"version": "1.0.0",
 	"type": "module",
 	"types": "index.d.ts",
 	"bin": {
@@ -10,14 +10,19 @@
 	"files": [
 		"dist/**",
 		"*.d.ts",
-		"bin/**"
+		"bin/**",
+		"src/**"
 	],
 	"author": "Jeff Jacobson",
 	"license": "Unlicense",
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
-		"prepare": "bun tools/generate-dts.ts && bunx --bun biome format index.d.ts --write",
-		"prepublishOnly": "bun tools/build.ts",
-		"lint": "biome lint",
+		"format": "bunx --bun biome format --write",
+		"lint": "bunx --bun biome lint",
+		"prepublishOnly": "bun --bun tools/generate-dts.ts && bun tools/build.ts",
+		"publish": "",
 		"test": "tsc --noEmit"
 	},
 	"devDependencies": {
@@ -36,5 +41,5 @@
 	"repository": "github:WSDOT-GIS/types_arcgis-core-adapter",
 	"bugs": "https://github.com/WSDOT-GIS/types_arcgis-core-adapter/issues",
 	"homepage": "https://github.com/WSDOT-GIS/types_arcgis-core-adapter#readme",
-	"packageManager": "bun@1.2.17"
+	"packageManager": "bun@1.2.18"
 }
