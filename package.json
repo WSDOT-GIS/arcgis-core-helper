@@ -38,8 +38,8 @@
 		"type",
 		"typing"
 	],
-	"repository": "github:WSDOT-GIS/types_arcgis-core-adapter",
-	"bugs": "https://github.com/WSDOT-GIS/types_arcgis-core-adapter/issues",
-	"homepage": "https://github.com/WSDOT-GIS/types_arcgis-core-adapter#readme",
+	"repository": "github:WSDOT-GIS/arcgis-core-helper",
+	"bugs": "https://github.com/WSDOT-GIS/arcgis-core-helper/issues",
+	"homepage": "https://github.com/WSDOT-GIS/arcgis-core-helper#readme",
 	"packageManager": "bun@1.2.18"
 }
