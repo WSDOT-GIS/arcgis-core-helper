@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import "./setup-arcgis-import.js";
+import "./src/setup-arcgis-import.js";
 
 describe("Import ArcGIS Modules", () => {
 	test("$arcgis.import should be defined", () => {
