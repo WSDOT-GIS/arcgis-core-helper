@@ -1,18 +1,26 @@
 #!/usr/bin/env node
 
 /**
- * This script generates the `index.d.ts` file.
+ * This script generates the `.d.ts` to support `$arcgis.import` loading from CDN.
  */
 
-import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
-import { join, relative, parse } from "node:path";
-import { stderr, argv, argv0, cwd } from "node:process";
+import {
+	mkdirSync,
+	readdirSync,
+	readFileSync,
+	statSync,
+	writeFileSync,
+} from "node:fs";
+import { join, parse, relative } from "node:path";
+import { argv, argv0, cwd, stderr } from "node:process";
 
 const baseDir = "node_modules/@arcgis/core";
 const outputFile = argv.at(2);
 
 if (!outputFile) {
-	stderr.write(`Usage: ${parse(argv0).name} ${relative(cwd(), argv[1])} <output file>\n`);
+	const exeName = parse(argv0).name;
+	const relativeScriptPath = relative(cwd(), argv[1]);
+	stderr.write(`Usage: ${exeName} ${relativeScriptPath} <output file>\n`);
 	process.exit(1);
 }
 
@@ -127,6 +135,10 @@ const lines = [
 `,
 ];
 
-writeFileSync(outputFile, lines.join("\n"), "utf-8");
+mkdirSync(parse(outputFile).dir, {
+	recursive: true,
+});
+
+writeFileSync(outputFile.toString(), lines.join("\n"), "utf-8");
 
 stderr.write(`\n✅ Generated ${outputFile} with ${moduleCount} entries.\n`);

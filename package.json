@@ -20,14 +20,16 @@
     "format": "bunx --bun biome format --write",
     "lint": "bunx --bun biome lint",
     "build": "bunx --bun tsc --build",
-    "prepublishOnly": "bun --bun tools/generate-dts.ts dist/index.d.ts && bun run build"
+    "prepublishOnly": "bun --bun tools/generate-dts.ts dist/arcgis-cdn.d.ts && bun run build"
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.1",
     "@tsconfig/bun": "^1.0.8",
     "@tsconfig/node-ts": "^23.6.1",
     "@tsconfig/recommended": "^1.0.10",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/jsdom": "^21.1.7",
+    "jsdom": "^26.1.0"
   },
   "peerDependencies": {
     "typescript": "^5.8.3",
